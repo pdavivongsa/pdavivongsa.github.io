@@ -1,242 +1,200 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="icon" type="image/png" href="projects/logo1.png" sizes="32x32">
+    <title>Patlapa Davivongsa - Experience Designer</title>
+  </head>
 
-#container {
-background-image: url("images/plpbg.gif");
-background-size: 800px 2061px;
-height: 2150px;
-background-repeat: no-repeat;
-background-position:0 0px;
-margin: 200px auto 0 auto;
-max-width: 800px;
-position: relative;
-}
+  <body>
+    <div class="container-fluid">
+      <div class="top-conatiner-col col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
 
+        <div class="row content-row" id="logo-row">
+          <div class=" col-12">
+            <img class="stack-image" id="logo-img" src="images/bg/plpheader.jpg" />
+          </div>
+        </div>
 
-#digitallink {
-display: block;
-background: url(buttons/d_push2.png) no-repeat;
-background-size: 100px auto;
-height: 86px;
-width:100px;
-position: absolute; top: 150px; left: 250px;
-}
-#digitallink:hover{
-background-position: 0 -86px;
-}
-#digitallink:active{
-background-position: 0 -172px;
-}
+        <div class="row">
+          <div class="col-12 col-sm-8 col-sm-offset-2 col-xl-4 col-xl-offset-4">
+            <div class="row">
+              <a href="#about">
+                <div id="aboutlink" class="menu-button col-xs-4 "></div>
+              </a>
+              <a href="#work">
+                <div id="worklink" class="menu-button col-xs-4"></div>
+              </a>
+              <a href="#contact">
+                <div id="contactlink" class="menu-button col-xs-4"></div>
+              </a>
+            </div>
+          </div>
+        </div>
 
-#archlink {
-display: block;
-background: url(buttons/arch_push2.png) no-repeat;
-background-size: 100px auto;
-height: 86px;
-width:100px;
-position: absolute; top: 150px; left: 350px;
-}
-#archlink:hover{
-background-position: 0 -86px;
-}
-#archlink:active{
-background-position: 0 -172px;
-}
+        <div class="content-row" id="stack1-row">
+  	  <div class="" id="stack-1-cont">
+  	    <img class="stack-image" id="stack-1" src="images/bg/stack1.png" />
+  	  </div>
+        </div>
 
-#musiclink {
-display: block;
-background: url(buttons/music_push2.png) no-repeat;
-background-size: 100px auto;
-height: 86px;
-width:100px;
-position: absolute; top: 150px; left: 450px;
-}
-#musiclink:hover{
-background-position: 0 -86px;
-}
-#musiclink:active{
-background-position: 0 -172px;
-}
-
-#aboutlink {
-display: block;
-background: url(buttons/a_push2.png) no-repeat;
-background-size: 100px auto;
-height: 86px;
-width:100px;
-position: absolute; top: 150px; left: 550px;
-}
-#aboutlink:hover{
-background-position: 0 -86px;
-}
-#aboutlink:active{
-background-position: 0 -172px;
-}
-
-/*#contactlink {
-display: block;
-background: url(buttons/c_push.png) no-repeat;
-background-size: 100px auto;
-height: 86px;
-width:100px;
-position: absolute; top: 150px; left: 600px;
-}
-#contactlink:hover{
-background-position: 0 -86px;
-}
-#contactlink:active{
-background-position: 0 -172px;
-}*/
-
-/*#pushbutlink {
-display: block;
-background: url(buttons/pushbut.png) no-repeat;
-background-size: 80px auto;
-height: 108px;
-width:80px;
-position: absolute; top: 530px; left: 800px;
-}
-#pushbutlink:hover{
-background-position: 0 -108px;
-}
-#pushbutlink:active{
-background-position: 0 -216px;
-}
-
-#pushbut1link {
-display: block;
-background: url(buttons/pushbut.png) no-repeat;
-background-size: 80px auto;
-height: 108px;
-width:80px;
-position: absolute; top: 1175px; left: 80px;
-}
-#pushbut1link:hover{
-background-position: 0 -108px;
-}
-#pushbut1link:active{
-background-position: 0 -216px;
-}
-
-#pushbut2link {
-display: block;
-background: url(buttons/pushbut.png) no-repeat;
-background-size: 80px auto;
-height: 108px;
-width:80px;
-position: absolute; top: 1600px; left: 800px;
-}
-#pushbut2link:hover{
-background-position: 0 -108px;
-}
-#pushbut2link:active{
-background-position: 0 -216px;
-}
-*/
-
-#digitaldes{
-	position:absolute; top:500px; left:550px; 
-}
-
-#archdes{
-	position:absolute; top:1250px; left:80px; 
-	width: 350px;
-}
-
-#musicdes{
-	position:absolute; top:1700px; left:750px; right:70px; 
-}
-
-#aboutdes{
-	position:absolute; top:2400px; left:50px; right: 50px; 
-}
-
-h1.title {
-	font-family: Ocr A Std, Ocr a, Eurostile, Arial, Verdana, sans-Serif;
-	text-align: right;
-	font-size: 100%;
-	padding-left: 20px;
-
-}
-
-p.description {
-	font-family: Ocr A Std, Ocr a, Eurostile, Arial, Verdana, sans-Serif;
-	font-size: 80%;
-	padding: 5px;
-}
-
-</style>
-</head>
-<link rel="icon" type="image/png" href="design/goingup2.png" sizes="32x32">
-
-<body>
-
-<div id="container">
+        <a name="about"></a>
+        <div class="content-row" id="stack1-row">
+      <div class="" id="stack-1-cont">
+        <img class="stack-image" id="stack-1" src="images/buttons/about.png" />
+      </div>
+        </div>
 
 
-<a id="digitallink" href="pat_digitalpage.html">
-</a>
+        <div class="row">
+          <div class="col-sm-12 portrait-column">
+  	    <img class="img-circle" src="images/portrait.jpg" alt="Profile"/>
+          </div>
+        </div>
 
-<a id="archlink" href="pat_archpage.html">
-</a>
+        <div class="row">
+          <div class="col-sm-12 info-column">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title">
+                  Product design | UX research | Music
+                </h1>
+              </div>
 
-<a id="musiclink" href="pat_musicpage.html">
-</a>
+              <div class="col-12">
+                <p class="description">
+                  Hello, I'm Patlapa. I'm a digital experience designer, currently working as a UX Designer/ UX Researcher in Bangkok. I got my master's degree from the Dynamic Media Institute in Boston where I wrote my thesis on Human-Computer Interaction and experience design. My undergraduate degree in Architectural Design was where I found my interest in spatial and user-centric design. Beside UX, I have a wide range of other interest from very technical subjects like analytics to very creative outlets like architecture and music. I write on <a href="http://www.medium.com/@patlapa" target="_blank" style="color:#7fc9ae">Medium</a> and my latest obsession is my Instagram <a href="https://www.instagram.com/designpoop/" target="_blank" style="color:#7fc9ae">@designpoop</a>.
+                </p>
+              </div>
+            </div>
 
-<a id="aboutlink" href="pat_aboutpage.html">
-</a>
-
-<!-- <a id="contactlink" href="#contact">
-</a> -->
-
-<a id="pushbutlink" href="pat_digitalpage.html">
-</a>
-
-
-<a id="pushbut1link" href="pat_archpage.html">
-</a>
-<a id="pushbut2link" href="pat_musicpage.html">
-</a>
-
-<!-- <div id="digital" style="position:absolute; top: 300px;">
-</div>
-
-<div id="arch" style="position:absolute; top: 800px;">
-</div>
-
-<div id="music" style="position:absolute; top: 1300px;">
-</div> -->
-
-<div id="about" style="position:absolute; top: 2000px;">
-</div>
+          </div>
+        </div>
 
 
-<!-- <div id="contact" style="position:absolute; top: 2500px;">
-</div> -->
+        <div class="content-row" id="stack1-row">
+  	  <div class="" id="stack-1-cont">
+  	    <img class="stack-image" id="stack-2" src="images/bg/stack2.png" />
+  	  </div>
+        </div>
 
-<!-- <div id="pushbut" style="position:absolute; top: 2000px;">
-</div> -->
+        <a name="work"></a>
+        <div class="content-row" id="stack1-row">
+      <div class="" id="stack-1-cont">
+        <img class="stack-image" id="stack-1" src="images/buttons/work.png" />
+      </div>
+        </div>
 
-<!-- <dive id="digitaldes">
-<p class="description">
-Dynamic media, digital tools, and prototyping allow for limitless creativity.
-</p>
-</div>
+        <div class="row work-menu-row">
+          <div class="col-12">
+            <div class="row">
+              <div id="all-work" data-filter="all" class="col-xs-4 col-sm-2 col-xs-offset-2 col-sm-offset-1 work-menu-button"></div>
+              <div id="software-work" data-filter=".cat-software" class="col-xs-4 col-sm-2 work-menu-button"></div>
+              <div class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl"></div>
+              <div id="hardware-work" data-filter=".cat-hardware" class="col-sm-2 col-xs-4 col-xs-offset-0 col-sm-offset-0 work-menu-button"></div>
+              <div id="space-work" data-filter=".cat-space" class="col-sm-2 col-xs-4  work-menu-button"></div>
+              <div id="music-work" data-filter=".cat-music" class="col-sm-2 col-xs-4  work-menu-button"></div>
+            </div>
+          </div>
+        </div>
 
-<div id="archdes">
-	<p class="description">
-		Approaching architectural design based on the interests of site specific, user friendly, and no limits to structural constrains, allow for projects that are conceptual, innovative, and fun to work on.
-	</p>
-</div>
+        <div class=" row work-link-row">
+          <div class="col-xs-12 work-link-cont">
+            <div id="perform-link" class="col-xs-6 col-sm-4 work-link cat-software mix" >
+              <a href="projects/pat_perform.html">
+                <img src="images/ox1/performox.png" class="work-image" />
+                <img src="images/ox1/performox2.png" id="perform" class="work-image-overlay" />
+             </a>
+            </div>
+            <div id="task-link" class="col-xs-6 col-sm-4 work-link cat-software mix">
+              <a href="projects/pat_task.html">
+                <img src="images/ox1/taskox.png" class="work-image" />
+                <img src="images/ox1/taskox1.png" id="task" class="work-image-overlay" />
+             </a>
+            </div>
+            <div id="hf-link" class="col-xs-6 col-sm-4 work-link cat-software mix">
+              <a href="projects/pat_hf.html">
+                <img src="images/ox1/hfox.png" class="work-image" />
+                <img src="images/ox1/hfox1.png" id="hf" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="naviwatch-link" class="col-xs-6 col-sm-4 work-link cat-hardware cat-space mix">
+              <a href="projects/pat_naviwatch.html">
+                <img src="images/ox1/naviwatchox.png" class="work-image" />
+                <img src="images/ox1/naviwatchox1.png" id="naviwatch" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="manic-link" class="col-xs-6 col-sm-4 work-link cat-software cat-hardware cat-music mix">
+              <a href="projects/pat_manicolors.html">
+                <img src="images/ox1/manicox.png" class="work-image" />
+                <img src="images/ox1/manicox1.png" id="manic" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="soundforms-link" class="col-xs-6 col-sm-4 work-link cat-hardware cat-music mix">
+              <a href="projects/pat_soundforms.html">
+                <img src="images/ox1/soundformsox.png" class="work-image" />
+                <img src="images/ox1/soundformsox1.png" id="soundforms" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="aud-link" class="col-xs-6 col-sm-4 work-link cat-software cat-hardware mix">
+              <a href="projects/pat_aud.html">
+                <img src="images/ox1/audox.png" class="work-image" />
+                <img src="images/ox1/audox1.png" id="aud" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="porous-link" class="col-xs-6 col-sm-4 work-link cat-space mix">
+              <a href="projects/pat_porous.html">
+                <img src="images/ox1/porousox.png" class="work-image" />
+                <img src="images/ox1/porousox1.png" id="porous" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="sss-link" class="col-xs-6 col-sm-4 work-link cat-space mix">
+              <a href="projects/pat_sss.html">
+                <img src="images/ox1/sssox.png" class="work-image" />
+                <img src="images/ox1/sssox1.png" id="sss" class="work-image-overlay" />
+              </a>
+            </div>
+            <div id="nmdr-link" class="col-xs-6 col-sm-4 work-link cat-music mix">
+              <a href="projects/pat_nmdr.html">
+                <img src="images/ox1/nmdrox.png" class="work-image" />
+                <img src="images/ox1/nmdrox1.png" id="nmdr" class="work-image-overlay" />\
+              </a>
+            </div>
+          </div>
+        </div>
 
-<div id="musicdes">
-	<p class="description">
-		It is all about music production with no particular style and experimenting with making different types of music and art works that go along with each of the pieces.
-	</p>
-</div> -->
+    <div class="content-row" id="stack1-row">
+      <div class="" id="stack-1-cont">
+        <img class="stack-image" id="stack-2" src="images/bg/stack3.png" />
+      </div>
+        </div>
+
+        <a name="contact"></a>
+        <div class="content-row" id="stack1-row">
+      <div class="" id="stack-1-cont">
+        <img class="stack-image" id="stack-1" src="images/buttons/contact.png" />
+      </div>
+        </div>
+         <div class="col-12">
+                <p class="description">
+                  I like chatting over a coffee! Find me on <a href="http://www.medium.com/@patlapa" target="_blank" style="color:#7fc9ae">Medium</a>, <a href="https://www.linkedin.com/in/patlapadavivongsa" target="_blank" style="color:#7fc9ae">Linkedin</a>, <a href="https://www.instagram.com/designpoop/" target="_blank" style="color:#7fc9ae">Instagram</a>, or email me at <a href="mailto:p.daviv@gmail.com" style="color:#7fc9ae">p.daviv@gmail.com</a>. I'd love to hear from you.
+
+                </p>
+              </div>
+
+          <a href="Davivongsa_Resume_resized.pdf" style="color:#7fc9ae" download> <div class="resume-button"></div></a>
 
 
-</body>
+        <div class="buttom-padding">
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="scripts/mixitup.min.js"></script>
+    <script src="scripts/menu.js"></script>
+  </body>
 </html>

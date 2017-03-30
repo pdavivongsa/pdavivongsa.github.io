@@ -1,0 +1,210 @@
+.top-conatiner-col {
+    max-width: 600px;
+}
+
+/* LOGO */
+#logo-row {
+    margin-top: 130px;
+}
+
+#logo-img {
+    max-width: 500px;
+}
+
+
+/* MENU */
+.buttons {
+    width: 325px;
+    display:block;
+    margin: auto;
+}
+
+.button-container {
+    width: 120px;
+    float: none;
+    display: inline-block;
+}
+
+.menu-button {
+    display: block;
+    height: 90px;
+    width:105px;
+    display: inline-block;
+    background-size: 105px auto !important;
+    background-position: 50% 0 !important;
+    padding: 0 10px;
+    margin: auto;
+}
+.menu-button:hover {
+    background-position: 50% -90px !important;
+}
+.menu-button:active {
+    background-position: 50% -180px !important;
+}
+
+#aboutlink {
+    background: url(images/buttons/a_push2.png) no-repeat;
+}
+
+#worklink {
+    background: url(images/buttons/work_push.png) no-repeat;
+}
+
+#contactlink {
+    background: url(images/buttons/contact_push.png) no-repeat;
+}
+
+
+/* about me row */
+.img-circle {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    display:block;
+}
+
+.portrait-column {
+    margin-top: 5%;
+}
+
+/*STACK*/
+.stack-image {
+    width: 100%;
+    display:block;
+    max-width: 800px;
+    margin: auto;
+}
+
+#stack-2 {
+
+}
+
+#stack1-row {
+    margin: 20px 0 20px 0;
+}
+
+
+/*ABOUT*/
+
+h1.title {
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    letter-spacing: -.02em;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    margin-left: -2.5px;
+    line-height: 1.04;
+    letter-spacing: -.028em;
+  text-align: center;
+}
+
+p.description {
+     font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+  text-align: center;
+}
+
+
+/* resume */
+.resume-button-row { margin-top: 25px; }
+
+.resume-button {
+    display: block;
+    background-size: 100px auto !important;
+    background-position: 50% 0 !important;
+    background: url(images/buttons/pushresume.png) no-repeat;
+    height: 135px;
+    width:100px;
+    margin: auto;
+}
+.resume-button:hover  { background-position: 50% -135px !important; }
+.resume-button:active { background-position: 50% -270px !important; }
+
+
+
+.buttom-padding {
+    padding-bottom: 30%;
+}
+
+
+/* WORK MENU */
+
+.work-menu-row { margin-top: 45px; }
+@media screen and (min-width: 768px) {
+    .work-menu-row {
+        min-width: 530px;
+    }
+}
+
+.work-menu-button {
+    display: block;
+    background-size: 100px auto !important;
+    background-position: 50% 0 !important;
+    height: 66px;
+    width: 100px;
+}
+
+.work-menu-button:hover  { background-position: 50% -66px !important; }
+.work-menu-button:active, .mixitup-control-active { background-position: 50% -132px !important; }
+.mixitup-control-active:hover { background-position: 50% -132px !important; }
+
+
+#all-work      { background: url(images/buttons/allbut2.png) no-repeat;}
+#software-work { background: url(images/buttons/softwarebut.png) no-repeat;}
+#hardware-work { background: url(images/buttons/hardwarebut.png) no-repeat;}
+#space-work    { background: url(images/buttons/spacebut.png) no-repeat;}
+#music-work    { background: url(images/buttons/musicbut.png) no-repeat;}
+
+/* work links */
+.work-link-cont {
+    max-width: 603px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.work-link {
+    width: auto;
+    padding: 5px !important;
+}
+.work-image {
+    width: 100%;
+    height: auto;
+}
+
+.work-image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: .5s ease;
+    padding: 5px;
+}
+.work-image-overlay:hover { opacity: 1 }
+
+.work-link:hover  { background-position: 50%  100% !important; }
+.work-link:active { background-position: 50%  100% !important; }
+
+/*
+#perform-link    { background: url(images/ox/performox.png) no-repeat; }
+#task-link       { background: url(images/ox/taskox.png) no-repeat; }
+#hf-link         { background: url(images/ox/hfox.png) no-repeat; }
+#naviwatch-link  { background: url(images/ox/naviwatchox.png) no-repeat; }
+#aud-link        { background: url(images/ox/audox.png) no-repeat; }
+#soundforms-link { background: url(images/ox/soundformsox.png) no-repeat; }
+#manic-link      { background: url(images/ox/manicox.png) no-repeat; }
+#porous-link     { background: url(images/ox/porousox.png) no-repeat; }
+#sss-link        { background: url(images/ox/sssox.png) no-repeat; }
+#nmdr-link       { background: url(images/ox/nmdrox.png) no-repeat; }
+*/
